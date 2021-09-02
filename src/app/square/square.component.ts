@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-square',
   template: `
-    <button nbButton *ngIf="!value">{{ value }}</button>
+    <button nbButton hero status="warning"  *ngIf="!value">{{ value }}</button>
     <button nbButton hero status="success" *ngIf="value == 'X'">
       {{ value }}
     </button>
